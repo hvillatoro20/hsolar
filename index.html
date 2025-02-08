@@ -3,61 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Clínica Plus Salud</title>
+    <title>HSOLAR - Soluciones Energéticas</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a La Clínica Plus Salud</h1>
-        <p>Tu bienestar es nuestra prioridad.</p>
+        <div class="logo">
+            <h1>HSOLAR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#equipo">Equipo Médico</a></li>
-            <li><a href="#horarios">Horarios</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Medicina Interna: Electrocardiograma, Evaluación preoperatoria...</li>
-            <li>Nutrición: Consulta nutricional, Plan alimenticio...</li>
-        </ul>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Soluciones Energéticas Sostenibles</h2>
+            <p>Ofrecemos soluciones innovadoras en energía solar para hogares y empresas.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
     </section>
-    <section id="equipo">
-        <h2>Equipo Médico</h2>
-        <div class="doctor"><img src="Image1.jpg" alt="Dra. Rosa Sierra"><p>Dra. Rosa Sierra</p></div>
-        <div class="doctor"><img src="Image2.jpg" alt="Dr. Kevin Molina"><p>Dr. Kevin Molina</p></div>
-        <div class="doctor"><img src="Image3.jpg" alt="Dra Alejandra Flores"><p>Dra Alejandra Flores</p></div>
-        <div class="doctor"><img src="Image4.jpg" alt="Genesis Duron"><p>Genesis Duron</p></div>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Instalación de Paneles Solares</h3>
+                <p>Instalación profesional de paneles solares para maximizar tu ahorro energético.</p>
+            </div>
+            <div class="service-item">
+                <h3>Mantenimiento de Sistemas</h3>
+                <p>Mantenimiento preventivo y correctivo para garantizar el óptimo funcionamiento.</p>
+            </div>
+            <div class="service-item">
+                <h3>Asesoría Energética</h3>
+                <p>Te ayudamos a tomar decisiones informadas sobre tu consumo energético.</p>
+            </div>
+        </div>
     </section>
-    <section id="horarios">
-        <h2>Horarios</h2>
-        <p>Lunes a Viernes: 6:30 am - 4:00 pm</p>
-        <p>Sábados y Domingos: 7:00 am - 12:00 pm</p>
+
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>HSOLAR es una empresa comprometida con la sostenibilidad y la innovación en el sector energético. Nuestro equipo de expertos está listo para ofrecerte soluciones a medida.</p>
     </section>
-    <section id="ubicacion">
-        <h2>Ubicación</h2>
-        <p>Col. Las Minitas, Avenida Juan Lindo, Edificio Millenium II Health Center, Piso No. 3, Clínica No. 318</p>
-    </section>
-    <section id="contacto">
+
+    <section id="contacto" class="contact">
         <h2>Contacto</h2>
-        <p>Email: <a href="mailto:plusalud.info@gmail.com">plusalud.info@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/50487655578">+504-87655578</a></p>
-        <p><a href="https://facebook.com/plussaludhn">Facebook</a> | <a href="https://instagram.com/plussaludhn">Instagram</a></p>
+        <p>Teléfono: <a href="tel:50433251448">504 3325 1448</a></p>
+        <p>Email: <a href="mailto:ventas@solucionesglobalesyequipos.com">ventas@solucionesglobalesyequipos.com</a></p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <textarea id="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
-    <button id="chat-btn">Chat en vivo</button>
-    <div id="chat-box" class="hidden">
-        <p>Hola, ¿cómo podemos ayudarte?</p>
-        <input type="text" id="name" placeholder="Nombre">
-        <input type="text" id="phone" placeholder="Celular">
-        <input type="email" id="email" placeholder="Correo">
-        <button onclick="sendChatInfo()">Enviar</button>
-    </div>
+
+    <footer>
+        <p>&copy; 2023 HSOLAR. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
